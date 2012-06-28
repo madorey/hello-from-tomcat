@@ -1,0 +1,16 @@
+2012-06-28
+==========
+
+Deploying a sinatra app to tomcat:
+
+ 1. rvm use jruby
+ 2. rvm --create use jruby@my-new-gemset
+ 3. Create the Gemfile.
+ 4. bundle install
+ 5. Create the sinatra application.
+ 6. Check that it works. ( > jruby my_sinatra_app.rb )
+ 7. Create config.ru
+ 8. Create config/warble.rb
+ 9. > warble war
+10. > sudo cp my_sinatra.war /the/path/to/tomcat/webapps/
+11. Point your browser to http:://localhost:8080/my_sinatra/
